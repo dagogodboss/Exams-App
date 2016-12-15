@@ -1,0 +1,3 @@
+First go to application/config/sq_config.php and change the database option to suite your server.
+change your Your Database name to your desire database name. 
+Note you to create the database first but dont worry about the table the installer will that for you.

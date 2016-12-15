@@ -1,0 +1,123 @@
+*,
+*:after,
+*:before {
+	box-sizing:border-box;
+}
+body {
+	padding-top: 60px;
+	background: #e3e1de;
+	font-family: 'Lato', sans-serif;
+}
+a.btn {
+	text-decoration: none;
+	color:#2980b9;
+	text-transform: uppercase;
+	display:inline-block;
+	position: relative;
+	font-weight:700;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+
+}
+a.btn:after{
+	content:"";
+	position: absolute;
+	bottom:-5px;
+	left: 51%; 
+	right:51%;
+	height:2px;
+	background:#16a085;
+
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+a.btn:hover { 
+	color:#16a085;
+}
+a.btn:hover:after {
+	left: 0%; 
+	right:0%;
+}
+.section-padding {
+	padding: 50px 0;
+}
+.section-title { 
+	font-family: 'Josefin Sans', sans-serif; 
+	text-align: center; 
+	position: relative;
+	margin-top: 0;
+	padding-bottom: 20px;
+}
+.section-title:after {
+	content: "";
+	position: absolute;
+	left: 50%; 
+	width: 160px;
+	margin-left: -80px;
+	bottom: 10px;
+	height: 3px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd; 
+}
+.page-title {
+	color: #696868;
+	font-family: 'Josefin Sans', sans-serif; 
+	text-align: center;
+	padding-top: 40px;
+	margin: 0;
+}
+.container {
+	max-width: 1140px;
+	margin: auto;
+	padding: 0 15px;
+}
+.main-menu-continer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999; 
+	border-bottom:1px solid #eee;
+	background: #fff;
+}
+.navbar-toggle {
+	display: none;
+}
+.navbar ul,
+.navbar li {
+	list-style: none;
+	margin:0;
+	padding: 0;
+	text-align: center;
+}
+.navbar>ul>li {
+	float: none;
+	display: inline-block;
+}
+.navbar>ul>li>a {
+	display: inline-block;
+	line-height: 40px;
+	font-weight: 700;
+	text-decoration: none; 
+	color: #5d5d5d;
+	font-size: 16px;
+	font-family: 'Josefin Sans', sans-serif; 
+	padding: 0 15px; 
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+.navbar>ul>li>a:hover ,
+.navbar>ul>li.active>a{
+	background:rgba(74, 112, 119, 0.69);
+	color: #fff;
+}
+ 
